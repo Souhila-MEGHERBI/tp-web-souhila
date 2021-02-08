@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 
+        <meta charset="UTF-8"/>
+        <title> TP Météo HTML </title>
+        <style>
+
+       
+        #titre { color:white;
+            background-color: black;
+            text-align: center;}
+            .ville {background-color: grey;}
+            body {background-color: rgb(166, 213, 245)}
+            .information { background-color: rgb(231, 216, 216);}
+            .town { display: flex;
+                   justify-content: space-between;
+                   margin: 20px;
+                  flex-wrap: wrap; }
+                  #icone0 { position: relative;
+                        bottom: 90px;
+                        left: 50px;
+
+                  }
+                  #icone1 { position: relative;
+                        bottom: 90px;
+                        left: 50px;
+
+                  }
+                  #icone2 { position: relative;
+                        bottom: 90px;
+                        left: 100px;
+
+                  }
+                 #Paris{ flex-grow: 1;}
+                 #Lyon { flex-grow: 1;}
+                 #Marseille { flex-grow: 2;}
+                 #footer{ display: flex;
+                   
+                   margin: 20px;
+                   flex-wrap: wrap; 
+                   flex-grow: 2;}
+
+                    
+              .town div {
+                  width: 300px;
+                  height: 120px;
+                  
+                  margin: 20px;
+                  /*border: 1 #000;*/
+                 }
+    
+      </style>
+
+	<body>
+           
+      <h1 id="titre">TP Météo HTML</h1>
+      <div class="town">
+
+        <div id="Paris" class="ville" >
+             <h2>Paris</h2>
+             <p>p:14°, Pluvieux et nuageux</p>
+             <div id="icone0">
+             <img src="Rain.png" alt="Pluvieux et nuageux" width="50">
+             </div>
+        </div> 
+
+        <div id="Lyon" class="ville" >
+             <h2>Lyon</h2>
+             <p>p:28°, Nuageux avec quelques éclaircies</p>
+             <div id="icone1">
+             <img src="Cloud.png" alt="Nuageux avec quelques éclaircies" width="50">
+            </div>
+        </div> 
+         
+        <div id="Marseille" class="ville" >
+             <h2>Marseille</h2>
+             <p>p:22°, Ensoleillé</p>
+             <div id="icone2">
+             <img src="sun.png" alt="soleil" width="50">
+            </div> 
+        </div> 
+      </div>
+
+
+      <footer id="footer" class="information">
+           <p> <i>souhila</i> MEGHERBI <br/>
+            Icones météos créer par <a href="https://thenounproject.com/search/collection/?q=weather">Nook Fulloption </a> </p>
+        
+      </footer>
+
+
+	</body>
+</html>
+
+     
