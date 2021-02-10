@@ -1,0 +1,44 @@
+
+#titre { color:white;
+ background-color: black;
+ text-align: center;}
+.ville {background-color: grey;}
+  body {background-color: rgb(166, 213, 245)}
+.information { background-color: rgb(231, 216, 216);}
+.town { display: flex;
+     justify-content: space-between;
+     margin: 20px;
+    flex-wrap: wrap; }
+    #icone0 { position: relative;
+          bottom: 90px;
+          left: 50px;
+
+    }
+    #icone1 { position: relative;
+          bottom: 90px;
+          left: 50px;
+
+    }
+    #icone2 { position: relative;
+          bottom: 90px;
+          left: 100px;
+
+    }
+   #Paris{ flex-grow: 1;}
+   #Lyon { flex-grow: 1;}
+   #Marseille { flex-grow: 2;}
+   #footer{ display: flex;
+     
+     margin: 20px;
+     flex-wrap: wrap; 
+     flex-grow: 2;}
+
+      
+.town div {
+    width: 200px;
+    height: 120px;
+    
+    margin: 20px;
+    /*border: 1 #000;*/
+   }
+  
