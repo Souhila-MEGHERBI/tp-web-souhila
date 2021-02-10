@@ -4,68 +4,26 @@
 	 
         <meta charset="UTF-8"/>
         <title> TP Météo HTML </title>
-        <style>
-
-       
-        #titre { color:white;
-            background-color: black;
-            text-align: center;}
-            .ville {background-color: grey;}
-            body {background-color: rgb(166, 213, 245)}
-            .information { background-color: rgb(231, 216, 216);}
-            .town { display: flex;
-                   justify-content: space-between;
-                   margin: 20px;
-                  flex-wrap: wrap; }
-                  #icone0 { position: relative;
-                        bottom: 90px;
-                        left: 50px;
-
-                  }
-                  #icone1 { position: relative;
-                        bottom: 90px;
-                        left: 50px;
-
-                  }
-                  #icone2 { position: relative;
-                        bottom: 90px;
-                        left: 100px;
-
-                  }
-                 #Paris{ flex-grow: 1;}
-                 #Lyon { flex-grow: 1;}
-                 #Marseille { flex-grow: 2;}
-                 #footer{ display: flex;
-                   
-                   margin: 20px;
-                   flex-wrap: wrap; 
-                   flex-grow: 2;}
-
-                    
-              .town div {
-                  width: 200px;
-                  height: 120px;
-                  
-                  margin: 20px;
-                  /*border: 1 #000;*/
-                 }
-    
-      </style>
-        <script>
-            let villeCourante = "Lyon"
-            function showCity() { alert(villeCourante); }
-      </script>
-       
-</head>
-
-
-<body onload="showCity()">
-
+        <link rel="stylesheet" href="méteo.css">   
+        
+        <script src="méteo.js"></script>
+      </head>
+      
+  
+    <body >
            
       <h1 id="titre">TP Météo HTML</h1>
+      <select onchange=showCity() name="villes" id="villes-select">
+            <option value="">--Please choose an option--</option>
+            <option value="Paris">Paris</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Marseille">Marseille</option>
+          
+        </select>
+       
       <div class="town">
 
-        <div id="Paris" class="ville" >
+        <div id="Paris" class="ville"  >
              <h2>Paris</h2>
              <p>14°C, Pluvieux et nuageux</p>
              <div id="icone0">
@@ -89,16 +47,18 @@
             </div> 
         </div> 
       </div>
-
-
       <footer id="footer" class="information">
            <p> <i>souhila</i> MEGHERBI <br/>
             Icones météos créer par <a href="https://thenounproject.com/search/collection/?q=weather">Nook Fulloption </a> </p>
-        
+ 
       </footer>
 
 
+     
+
 	</body>
 </html>
+
+
 
      
